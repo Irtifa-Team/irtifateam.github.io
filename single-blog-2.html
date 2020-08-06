@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Irtifa - Single Blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- header_start  -->
+
+<header>
+    <div class="header-area ">
+        <div class="header-top_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="short_contact_list">
+                            <ul>
+                                <li><p style="text-align:center">Follow us on Social!</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 ">
+                        <div class="social_media_links">
+                            <a href="https://twitter.com/IrtifaMedipol" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/medipol_irtifa" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/medipol-i%CC%87rtifa-aviation/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sticky-header" class="main-header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/mainlogo1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a  href="index.html">home</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="service.html">services</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header_start  -->
+
+<!-- bradcam_area_start -->
+<div class="bradcam_area breadcam_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="bradcam_text text-center">
+                    <h3>Drone Software (Computer Vision)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bradcam_area_end -->
+
+<!--================Blog Area =================-->
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 posts-list">
+                <div class="single-post">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="img/blog/singleblog2.png" alt="">
+                    </div>
+                    <div class="blog_details">
+                        <h2>For the agriculture competition of Teknofest, we, as the İrtifa team, studied the methods of the computer vision in <i>OpenCV</i> to utilize them in our project.
+                        </h2>
+                        <ul class="blog-info-link mt-3 mb-4">
+                            <li><a href="#">#Software</a></li>
+                            <li><a href="#">#Drone</a></li>
+                            <li><a href="#">#IrtifaTeam</a></li>
+                        </ul>
+                        <p class="quotes"><i>
+                            "We worked individually to accomplish different tasks, but also added a collaborative aspect whenever necessary." - Fatma Büşra Yaman
+                        </i></p>
+                        <p>
+                            One of the main tasks to solve was the detection of the illnesses on the trees and the fruits, in particular, cherry and apple trees. However, to do this, at first detecting the trees was necessary, and this was solved using optical flow to block out the trees and HSV colour space to further define. These two methods complemented each other since optical flow firstly eliminated the similarly-coloured ground with grass by using the distance from the drone, and HSV mask selected the tree by building on top of it.
+                        </p>
+
+                        <p>
+                            After that, the part to classify the diseases came. For this purpose, HSV colour space was used again. One of the diseases has characteristic black and brown blotches on leaves. For this particular one, an algorithm to mask the differently coloured parts and masking the remaining parts, effectively only leaving the parts with the disease was written. This was furthered by adding the ability to contour the diseased parts and calculating the total area to conclude if the leaves were diseased and, consequently, the tree. A similar illness was seen on the fruits, too, the same algorithm could be used for green apples, but for red apples and cherries, it is necessary to change the mask colours to a suitable range to detect red at first. Another disease is marked by white cocoons and webs which could be perceived by using HSV algorithm to filter out the colours other than white. Other illnesses will be added as the time goes on for the detection of a wider spectrum of diseases.
+                        </p>
+
+
+                        <div class="quote-wrapper">
+                            <div class="quotes">
+                                Another topic was the detection of humans and animals in the field. For this reason, deep learning algorithms with Tensorflow will be used. An appropriate algorithm will be chosen for the task at hand with the highest accuracy to speed ratio. Since the people and animals will be detected from above it will make it a little bit harder but with the right training, using data from thousands of hectares of field, it is possible.
+                            </div>
+                        </div>
+
+                        <p>
+                            The last part is to differentiate the foreign objects left or forgotten on the field and to do this, another HSV mask will be used, and the objects will be shown on the website for the farmers and workers to discern.
+                        </p>
+
+                        <h4 style="text-align: center">Blog by:</h4><br>
+                        <h5 style="text-align: center">Fatma Büşra Yaman</h5>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="blog_right_sidebar">
+
+
+                    <aside class="single_sidebar_widget instagram_feeds">
+                        <h4 class="widget_title">Instagram Feeds</h4>
+                        <ul class="instagram_row flex-wrap">
+                            <li>
+                                <a href="https://www.instagram.com/p/CBBQFUFlZ3f/?igshid=o2gn0so2pt5g" target="_blank">
+                                    <img class="img-fluid" src="img/InstagramPost1.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ Blog Area end =================-->
+
+<!-- footer_start  -->
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3  col-md-6 col-lg-3">
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-3 ">
+                <div class="footer_widget">
+                    <div class="footer_logo">
+                        <a href="#">
+                            <img src="img/mainlogo2.png" alt="" class="center">
+                        </a>
+                    </div>
+
+                    <div class="socail_links">
+                        <ul>
+                            <li>
+                                <a href="https://twitter.com/IrtifaMedipol" target="_blank">
+                                    <i class="ti-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/medipol_irtifa" target="_blank">
+                                    <i class="ti-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/medipol-i%CC%87rtifa-aviation/" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="bordered_1px"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a href="https://www.instagram.com/woosal1337/">WOOSAL</a> and <a href="https://colorlib.com" target="_blank">ColorLib</a></a> with <i class="ti-heart" aria-hidden="true"></i>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer_end  -->
+
+
+<!-- JS here -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/ajax-form.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/scrollIt.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/nice-select.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/gijgo.min.js"></script>
+
+<!--contact js-->
+<script src="js/contact.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+
+<script src="js/main.js"></script>
+<script>
+    $('#datepicker').datepicker({
+        iconsLibrary: 'fontawesome',
+        disableDaysOfWeek: [0, 0],
+        //     icons: {
+        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //  }
+    });
+    $('#datepicker2').datepicker({
+        iconsLibrary: 'fontawesome',
+        icons: {
+            rightIcon: '<span class="fa fa-caret-down"></span>'
+        }
+
+    });
+    var timepicker = $('#timepicker').timepicker({
+        format: 'HH.MM'
+    });
+</script>
+</body>
+
+</html>
